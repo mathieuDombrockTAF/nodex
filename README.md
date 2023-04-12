@@ -11,7 +11,10 @@ See the [Original NodeJS README.md](README.nodejs.md) for more info on the NodeJ
 See [CHANGELOG.md](CHANGELOG.md) to check which version of Node is packaged here currently. 
 
 ## Important Notes
-This is not a cross-platform build. Currently this is only setup for `linux-x64`.
+
+- Updates are painless, just edit the `setup.sh` script to setup a new NodeJS version.
+
+- This is not a cross-platform build. Currently this is only setup for `linux-x64`.
 
 ## Example
 ```
