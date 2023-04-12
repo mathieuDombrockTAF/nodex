@@ -1,0 +1,12 @@
+Package: nodex
+Version: 18.15.0
+Architecture: all
+Maintainer: Mathieu Dombrock
+Original-Maintainer: Mathieu Dombrock
+Installed-Size: 524
+Depends: 
+Provides: 
+Section: javascript
+Priority: optional
+Homepage: https://example.com/
+Description: This is just a test
