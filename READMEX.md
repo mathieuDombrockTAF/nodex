@@ -2,6 +2,32 @@
 
 A custom deb package installer for NodeJS.
 
+This allows you to easily create a Debian package which installs an arbitrary NodeJS version. 
+
+The resulting package should work in the exact same way that you would expect if you did `apt install node`.  
+
+## Example
+```
+$ ls
+nodex.deb
+
+$ which node
+$ which nodejs 
+
+$ dpkg -i nodex.deb
+...
+
+$ which node
+/usr/local/bin/node
+
+$ node
+Welcome to Node.js v18.15.0.
+Type ".help" for more information.
+> 
+```
+
+In this example we can see that there is no version of NodeJS installed before installing this package. After we install the package, we have NodeJS version 18.15.0 which is **not** available in the Ubuntu repository. 
+
 ## How This Works
 
 ### Edit `./setup.sh`
