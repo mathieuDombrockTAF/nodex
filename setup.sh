@@ -19,5 +19,9 @@ rm -rf ./deb/usr/local/*
 echo "Renaming Archive Output..."
 mv node*/* ./deb/usr/local/
 
+echo "Moving License and Meta..."
+mv -f ./deb/usr/local/*.md .
+mv -f ./deb/usr/local/LICENSE .
+
 echo "--------"
 echo "Done!"
