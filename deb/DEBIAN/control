@@ -9,4 +9,4 @@ Provides:
 Section: javascript
 Priority: optional
 Homepage: https://github.com/turnaroundfactor/nodex
-Description: This is just a test
+Description: A custom NodeJS version
