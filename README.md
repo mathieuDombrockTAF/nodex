@@ -14,7 +14,7 @@ See [CHANGELOG.md](CHANGELOG.md) to check which version of Node is packaged here
 
 - Updates are painless, just edit the `setup.sh` script to setup a new NodeJS version.
 
-- This is not a cross-platform build. Currently this is only setup for `linux-x64`.
+- This is not a cross-platform build. Currently this is only setup for `linux-arm64`.
 
 ## Example
 ```
