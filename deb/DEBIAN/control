@@ -8,5 +8,5 @@ Depends:
 Provides: 
 Section: javascript
 Priority: optional
-Homepage: https://example.com/
+Homepage: https://github.com/turnaroundfactor/nodex
 Description: This is just a test
