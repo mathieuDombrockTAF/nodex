@@ -21,11 +21,11 @@ rm *.tar.xz || exit 1
 echo "Removing old bin"
 rm -rf ./deb/usr/local/*
 
-echo "Moving archive output"
-mv node*/* ./deb/usr/local/ || exit 1
-
 echo "Creating local dir"
 mkdir -p ./deb/usr/local/
+
+echo "Moving archive output"
+mv node*/* ./deb/usr/local/ || exit 1
 
 echo "Moving license and meta to parent repo"
 mv -f ./deb/usr/local/README.md ./README.nodejs.md
