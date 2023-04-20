@@ -12,6 +12,8 @@ See [CHANGELOG.md](CHANGELOG.md) to check which version of Node is packaged here
 
 ## Important Notes
 
+- This repo does not contain NodeJS itself. You **need to run `mkdeb.sh` or `update.sh` to download the NodeJS files**.
+
 - Updates are painless, just edit the `setup.sh` script to setup a new NodeJS version.
 
 - This is not a cross-platform build. Currently this is only setup for `linux-arm64`.
