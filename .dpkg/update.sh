@@ -10,19 +10,22 @@ NODE_URL="https://nodejs.org/dist/v$VERSION/node-v$VERSION-$PLATFORM.tar.xz"
 
 echo "Downloading NodeJS: $VERSION"
 echo "From $NODE_URL"
-wget $NODE_URL
+wget $NODE_URL || exit 1
 
 echo "Extracting archive"
 tar -xJf *.tar.xz || exit 1
 
 echo "Removing archive"
-rm *.tar.xz
+rm *.tar.xz || exit 1
 
 echo "Removing old bin"
 rm -rf ./deb/usr/local/*
 
-echo "Renaming archive output"
-mv node*/* ./deb/usr/local/
+echo "Moving archive output"
+mv node*/* ./deb/usr/local/ || exit 1
+
+echo "Creating local dir"
+mkdir -p ./deb/usr/local/
 
 echo "Moving license and meta to parent repo"
 mv -f ./deb/usr/local/README.md ./README.nodejs.md
