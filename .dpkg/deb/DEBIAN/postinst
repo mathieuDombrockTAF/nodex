@@ -1,0 +1,5 @@
+#! /bin/bash
+# bootstrap npm
+# should really be a specific version
+npm i -g npm
+
