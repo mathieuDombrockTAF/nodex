@@ -6,10 +6,6 @@ This allows you to easily create a Debian package which installs an arbitrary No
 
 The resulting package should work in the exact same way that you would expect if you did `apt install node`.  
 
-See the [Original NodeJS README.md](README.nodejs.md) for more info on the NodeJS version packaged here.
-
-See [CHANGELOG.md](CHANGELOG.md) to check which version of Node is packaged here currently. 
-
 ## Important Notes
 
 - This repo does not contain NodeJS itself. You **need to run `mkdeb.sh` or `update.sh` to download the NodeJS files**.
