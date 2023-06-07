@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Config
-VERSION="14.21.3"
+VERSION="16.20.0"
 PLATFORM="linux-arm64" 
 
 NODE_URL="https://nodejs.org/dist/v$VERSION/node-v$VERSION-$PLATFORM.tar.xz"
@@ -26,11 +26,6 @@ mkdir -p ./deb/usr/local/
 
 echo "Moving archive output"
 mv node*/* ./deb/usr/local/ || exit 1
-
-echo "Moving license and meta to parent repo"
-mv -f ./deb/usr/local/README.md ./README.nodejs.md
-mv -f ./deb/usr/local/*.md .
-mv -f ./deb/usr/local/LICENSE .
 
 echo "--------"
 echo "Done!"

@@ -42,6 +42,8 @@ In this example we can see that there is no version of NodeJS installed before i
 
 ## How This Works
 
+**Note: The following process is automated as a GH action on the main branch. Just edit `.dpkg/update.sh` to change the node version.**
+
 ### Edit `./setup.sh`
 
 Edit the `./setup.sh` file to specify the new version you want to set up.
